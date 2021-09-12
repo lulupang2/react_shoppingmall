@@ -33,6 +33,21 @@
   top:70%;
   left: 80%;
   width: 30%;
+  animation: shake .3s infinite ease-out;
+}
+@keyframes shake {
+  from {
+    opacity: 1;
+    left: 75%;
+  }
+  50% {
+    left: 85%;    
+    opacity: 0.9;
+  }
+  to{
+    left:75%;
+    opacity: 1;
+  }
 }
 
 .container {
