@@ -1,0 +1,13 @@
+.긴줄{
+    width: 100%;
+    min-height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products_list_wrap {
+    background-color: #FFF;
+    width: 100%;
+    height: 200vh;
+}
