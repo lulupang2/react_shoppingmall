@@ -3,24 +3,45 @@
     padding: 0;
     margin: 0;
 }
+*,*::before,*::after {
+  box-sizing: inherit;
+}
 
 .bg {
-  background-color: rgb(250, 20, 20);
+  background-color: #ff4e4e;
   width: 100vw;
   max-width:100%;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
-  position: relative;
+  justify-content: center; 
+  color: #FFF;
+  text-align: center;
+  overflow: hidden;
+
+}
+.울퉁불퉁1 {
+  position: fixed;
+  display: block;
+  top:50%;
+  right: 70%;
+  width: 50%;
+}
+
+.울퉁불퉁2 {
+  position: fixed;
+  display: block;
+  top:70%;
+  left: 80%;
+  width: 30%;
 }
 
 .container {
   position: relative;
   margin: 5rem;
-  box-shadow: 0 0 10rem rgba(0, 0, 0, 0.3);
-  border: .9rem solid #FFF;
-  width: 81vw;
-  border-radius: .5rem;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.3);
+  border: .8rem solid white;
+  width: 80vw;
+  border-radius: .3rem;
   overflow: hidden;
-  height: 100vh;
+  height: auto;
 }

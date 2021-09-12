@@ -26,7 +26,7 @@ const Menu = () => {
                     </div>
                     <div className="logo_name">
                         <span className="logo_name_text">
-                            @@PET FOOD
+                            지존 PET FOOD
                         </span>
                     </div>
                 </div>
