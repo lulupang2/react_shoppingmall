@@ -67,28 +67,27 @@ a:visited {
     font-family: 'GowunDodum-Regular';
     height: 50vh;
     align-items: center;
-    gap: 5rem;
+    gap: 10px;
     
 }
 
 .textwrap {
     text-align: right;
     flex-grow: 1;
-    width: 50%;
     color: #FFF;
     margin-left: 10rem;
 
 }
 
 .maintext {
-    font-size: 3rem;
+    font-size: 2vw;
 }
 .subtext {
     color: #FFF;
-    font-size: 1.3rem;
+    font-size: 1.2vw;
 }
 .imgwrap {
-    width: 50%;
+    
     flex-grow: 1;
 }
 .imgwrap svg {
@@ -99,20 +98,23 @@ a:visited {
 #moreBtn {
     float: right;
     text-align: center;
-    line-height: 5rem;
-    font-size: 2rem;
+    line-height: 8vw;
+    font-size: 3vw;
     display: block;
     margin: 10px;
-    border-radius: 10px;
-    width: 15rem;
+    border-radius: 30px;
+    width: 20vw;
     max-width: 200px;
-    background-color: tomato;
-    height: 5rem;
+    background-color: #fff;
+    height: 8vw;
     transition: .2s ease-out;
+    color: #ff4e4e;
+    border: 1vw solid #ff4e4e;
 }
 #moreBtn:hover {
     cursor: pointer;
-    background-color: #ff6437;
+    background-color: #ff4e4e;
+    color:white;
     font-size: 2.1rem;
 }
 

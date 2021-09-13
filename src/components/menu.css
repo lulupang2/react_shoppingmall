@@ -15,7 +15,7 @@
     line-height: 100px;
     display: flex;
     justify-content: space-around;
-    font-size: 1.3rem;
+    font-size: 1.3vw;
     gap: .5rem;
     font-family: 'Eulyoo1945-SemiBold', 'Material Icons';
     position: relative;
@@ -103,15 +103,15 @@
 .nav_icons {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: flex-end;
 }
 
 .nav_icons .material-icons {
-    font-size: 3.5rem;
+    font-size: 3vw;
     display: block;
 }
 .material-icons:hover {
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.1);
 }

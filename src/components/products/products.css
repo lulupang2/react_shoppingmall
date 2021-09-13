@@ -1,4 +1,11 @@
 @font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'GmarketSansBold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
     font-weight: normal;
@@ -13,7 +20,7 @@
 }
 .긴줄{
     font-family: 'GmarketSansBold';
-    font-size: 5rem;
+    font-size: 5vw;
     width: 100%;
     min-height: 320px;
     display: flex;
@@ -24,9 +31,41 @@
 
 .products_list_wrap {
     font-family: 'HangeulNuri-Bold';
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: #FFF;
     width: 100%;
     height: 200vh;
     color: black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+    justify-content: center;
+}
+.card_wrap {
+    font-family: 'Cafe24SsurroundAir';
+    margin-top: 10px;
+    box-shadow: -2px -2px 8px #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 2vw;
+    flex-grow: 0;
+    height: 50vw;
+    width: 35vw;
+    
+}
+.card_title {
+    margin-top: 5vh;
+    font-size: 2vw;
+    color: #333;
+}
+.card_img {
+    max-height: 60%;
+}
+.card_img > img {
+    height: 100%;
+}
+.card_price {
+    font-size: 1.5vw;
+    margin-bottom: 5vh;
 }
