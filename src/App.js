@@ -3,6 +3,8 @@ import './App.css';
 import Menu from './components/menu';
 import Home from './components/home';
 import Products from './components/products/products';
+import ProductUpload from './components/products/product_upload';
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +20,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/products" component={Products} />
+            <Route path="/upload" component={ProductUpload} />
           </Switch>
         </div>
       </div>

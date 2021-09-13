@@ -47,7 +47,7 @@ const Menu = () => {
                             
                         </li>
                         <li><span className="dropheader"><Link to="/products">{제목들[2]}</Link></span></li>
-                        <li><span className="dropheader"><Link to="/customer">{제목들[3]}</Link></span></li>
+                        <li><span className="dropheader"><Link to="/upload">{제목들[3]}</Link></span></li>
                     </ul>
                </div>
                 <div className="nav_icons">

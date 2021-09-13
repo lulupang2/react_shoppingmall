@@ -1,4 +1,10 @@
 @font-face {
+    font-family: 'SpoqaHanSansNeo-Thin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'Cafe24SsurroundAir';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
     font-weight: normal;
@@ -68,4 +74,110 @@
 .card_price {
     font-size: 1.5vw;
     margin-bottom: 5vh;
+}
+
+/* 업로드부분 */
+.p_container {
+    font-family: 'SpoqaHanSansNeo-Thin';
+    display: flex;
+    font-size: 1.2vw;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    width: 100%;
+    background-color: #FFF;
+    color: #111;
+    padding-top: 3vh;
+
+}
+.col_input {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+
+.input_text {
+    text-align: right;
+    flex-grow: 1;
+    width: 10vw;
+    margin-right: 10px;
+}
+.p_container input {
+    border: 0;
+    height: 5vh;
+    outline: none;
+    caret-color: #333;
+    font-size: 1.2vw;
+    box-shadow: 0 0 1px #333;
+    font-family: 'SpoqaHanSansNeo-Thin';
+    border: 0;
+    flex-grow: 6;
+    margin-right: 10px;
+}
+
+#p_kind {
+    text-align: right;
+    border: 0;
+    height: 5vh;
+    outline: none;
+    caret-color: #333;
+    font-size: 1.2vw;
+    box-shadow: 0 0 1px #333;
+    font-family: 'SpoqaHanSansNeo-Thin';
+    border: 0;
+    margin-right: 10px;
+    width: 75%;
+}
+#p_detail {
+    border: 0;
+    height: 5vh;
+    outline: none;
+    caret-color: #333;
+    font-size: 1vw;
+    box-shadow: 0 0 1px #333;
+    font-family: 'SpoqaHanSansNeo-Thin';
+    border: 0;
+    flex-grow: 6;
+    margin-right: 10px;
+}
+input[type="file"] { 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip:rect(0,0,0,0); 
+    border: 0; 
+}
+.img_preview {
+    width: 320px;
+    max-height: 240px;
+}
+.fileadd_btn {
+    font-size: 1.2vw;
+    background-color: #ff4e4e;
+    border-radius: 5px;
+    height: 5vh;
+    line-height: 5vh;
+    width: 8vw;
+    color: #FFF;
+    display: block;
+    margin-right: 10px;
+}
+.submitBtn
+{
+    font-family: 'SpoqaHanSansNeo-Thin';
+    font-size: 1vw;
+    background-color: #ff4e4e;
+    border:0;
+    border-radius: 10px;
+    color: #FFF;
+    flex-grow: 1;
+    margin: 2vw;
+    height: 5vh;
+    font-size: 2vw;
 }
