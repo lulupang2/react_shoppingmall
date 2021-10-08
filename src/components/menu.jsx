@@ -14,7 +14,7 @@ const Menu = () => {
 }
 
     const 이벤트들 = ["진행중인 이벤트", "종료된 이벤트"];
-    const 상품들 = ["신상품", "할인상품", "전체상품"];
+    //const 상품들 = ["신상품", "할인상품", "전체상품"];
     const 제목들 = ["HOME" , "EVENT" , "SHOP" , "CUSTOMER"]
     
     return (
@@ -51,12 +51,15 @@ const Menu = () => {
                     </ul>
                </div>
                 <div className="nav_icons">
-                    {
+                    {/* {
                     아이콘들.map((a,i)=>{
                         return(
-                            <span className="material-icons" key={a}><Link to="/etc{[i]}">{아이콘들[i]}</Link></span>)
+                            <span className="material-icons" key={a}><Link to="/users">{아이콘들[i]}</Link></span>)
                     })
-                }
+                } */}
+                <span className="material-icons" ><Link to="/users">{아이콘들[0]}</Link></span>
+                <span className="material-icons" ><Link to="/users">{아이콘들[1]}</Link></span>
+                <span className="material-icons" ><Link to="/join">{아이콘들[2]}</Link></span>
                 </div>
             </nav>
 

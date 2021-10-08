@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState, Component } from 'react'
-import jQuery from 'jquery';
+import React, { useEffect } from 'react'
 import $ from 'jquery';
 import './products.css'
 // const ProductUpload = () => {
@@ -41,7 +40,7 @@ const ProductUpload = () => {
                 if (window.FileReader) {
                     var filename = $(this)[0].files[0].name;
                 } else {
-                    var filename = $(this).val().split('/').pop().split('\\').pop();
+                    let filename = $(this).val().split('/').pop().split('\\').pop();
                 }
 
                 $(this).siblings('.file_upload').val(filename);
@@ -58,7 +57,7 @@ const ProductUpload = () => {
         <div className="ProductUpload">
             <form>
                 <div className="p_container">
-                    <h1>상품등록펭지</h1>
+                    <h1>상품등록페이지</h1>
                 <div className="col_input">
                         <span className="input_text">
                             상품명
@@ -115,7 +114,7 @@ const ProductUpload = () => {
                             상세설명
                         </span>
 
-                    <textarea name="p_detail" id="p_detail" placeholder="보통 API당겨쓰지않나"></textarea>
+                    <textarea name="p_detail" id="p_detail" placeholder="상세설명"></textarea>
                 </div>
 
                 <div className="col_input">
@@ -127,23 +126,7 @@ const ProductUpload = () => {
                     <label for="p_img" className="fileadd_btn">파일 추가</label>
 
                 </div>
-                
-                {/* 
-                <div className="col_input">
-                <label for="p_file2">
-                    <aside className="side">
-                        <input ref={fileRef} hidden={true} id="file" type='file' onChange={fileBtn}></input>
-                        <header className="side-header">
-                            <span align="center" variant="overline" display="block" gutterBottom>
-                                Title text
-                            </span>
-                        </header>
-                        <div style={{ padding: 10 }}>
-                            <button onClick={handleFileButtonClick}>UPLOAD</button>
-                        </div>
-                    </aside>
-                    {preview}
-                </label> */}
+
                     <div className="col_input">
                         <button type="submit" className="submitBtn">전송</button>
 </div>

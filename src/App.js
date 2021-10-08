@@ -4,6 +4,8 @@ import Menu from './components/menu';
 import Home from './components/home';
 import Products from './components/products/products';
 import ProductUpload from './components/products/product_upload';
+import Users from './components/users/userslist';
+import Join from './components/users/join';
 
 function App() {
   return (
@@ -21,6 +23,9 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route path="/products" component={Products} />
             <Route path="/upload" component={ProductUpload} />
+            <Route path="/users" component={Users} />
+            <Route path="/join" component={Join} />
+            
           </Switch>
         </div>
       </div>

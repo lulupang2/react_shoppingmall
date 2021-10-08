@@ -35,7 +35,7 @@
   top:70%;
   left: 80%;
   width: 30%;
-  animation: shake .1s infinite ease-out;
+  animation: shake 2.5s infinite ease-out;
 }
 @keyframes shake {
   from {

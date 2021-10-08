@@ -98,9 +98,7 @@ a:visited {
 #moreBtn {
     float: right;
     text-align: center;
-    line-height: 8vw;
-    font-size: 3vw;
-    display: block;
+    font-size: 2vw;
     margin: 10px;
     border-radius: 30px;
     width: 20vw;
