@@ -1,36 +1,30 @@
 import './products.css'
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const Products = () => {
+    const [목록, setData] = useState([]);
+
+    useEffect(() => {
+        axios
+            .get(`http://localhost:8080/api/products`)
+            .then(({ data }) => setData(data))
+            .catch((err) => { });
+    }, []);
+    const productList = 목록.map((item) => (
+        <div className="card_wrap">
+            <div className="card_title">{item.p_name}</div>
+            <div className="card_img"><img src="products/img/{item.p_img1}" alt="alt를 넣어줘야 워닝이 안뜸"></img></div>
+            <div className="card_price">{item.p_price}\</div>
+        </div>
+    ));
     return (
         <div className="Products">
             <div className="긴줄">
                 베스트 상품 한개나 고양이 사진쓰고 좋은거 맥이라고 쓰면 될듯
             </div>
             <div className="products_list_wrap">
-            <div className="card_wrap">
-                    <div className="card_title">로얄캐닌 키튼</div>
-                    <div className="card_img"><img src="https://cdn.royalcanin-weshare-online.io/XWkva2QBG95Xk-RBE9Mw/v248/16-kitten-ns-b1?w=420&fm=jpg" alt="alt를 넣어줘야 워닝이 안뜸"></img></div>
-                    <div className="card_price">1,200,000원</div>
-                </div>
-                <div className="card_wrap">
-                    <div className="card_title">제품명</div>
-                    <div className="card_img">사진이미지</div>
-                    <div className="card_price">가격</div>
-                </div>
-                <div className="card_wrap">
-                    <div className="card_title">제품명</div>
-                    <div className="card_img">사진이미지</div>
-                    <div className="card_price">가격</div>
-                </div>
-                <div className="card_wrap">
-                    <div className="card_title">제품명</div>
-                    <div className="card_img">사진이미지</div>
-                    <div className="card_price">가격</div>
-                </div>
-
-
-
-
+            {productList}
             </div>
             
             카드형식<br />

@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import DaumPostcode from 'react-daum-postcode';
-import '../../style/join.css';
-
-import axios from 'axios';
 import { Button, Form, Modal } from 'react-bootstrap';
+import '../../style/join.css';
 
 const Join = () => {
     const [show, setShow] = useState(false);
@@ -78,14 +76,25 @@ const Join = () => {
     let formElem = async (e) => {
         e.preventDefault();
 
-        let response = await fetch('http://192.168.0.52:8080/api/users/new', {
+        let response = await fetch('http://localhost:8080/api/users/new', {
             method: 'POST',
-            body: new FormData(formElem)
+            headers: { 'Content-type': 'application/json'},
+            body: JSON.stringify(formdata)
         });
+        let result = await response.json();
+        console.log(result);        
     }
 
         return (
             <div className="page-content">
+                <section className="modal">
+                    <div className="box">
+                        <span className="alert_text" id="alert_text"></span>
+                    </div>
+                    <div className="alert-btn" id="alert-btn">
+                        <Button className="btn">확인</Button>
+                    </div>
+                </section>
                 <div className="form-v6-content">
                     <div className="form-left">
 
@@ -119,7 +128,7 @@ const Join = () => {
                             <Button variant="danger" onClick={handleShow} className="postsearch">우편번호 찾기</Button>
                             <Modal
                                 show={show}
-                                backdrop="static"
+                                onComplete={handleComplete}
                                 keyboard={false}
                             >
                                 <Modal.Title>주소를 입력해주세요</Modal.Title>
