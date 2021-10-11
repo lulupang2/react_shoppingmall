@@ -110,6 +110,10 @@ const ProductUpload = () => {
 
                     </div>
                     <div className="col_input">
+                    <input type="text" name="p_manu" id="p_manu" className="p_manu" />
+
+                </div>
+                <div className="col_input">
                         <span className="input_text">
                             가격
                         </span>
@@ -139,6 +143,27 @@ const ProductUpload = () => {
                         </select>
                     </div>
                     <div className="col_input">
+                    <input type="text" name="p_price" id="p_price" className="p_price" />
+
+                </div>
+                <div className="col_input">
+                        <span className="input_text">
+                            현재수량
+                        </span>
+                    <input type="text" name="p_manu" id="p_manu" className="p_manu" />
+                </div>
+                <div className="col_input">                    
+                        <span className="input_text">
+                            종류
+                        </span>
+                    <select name="p_kind" id="p_kind">
+                        <option>반려견</option>
+                        <option>반려묘</option>
+                        <option>기타동물</option>
+                        <option>기타</option>
+                    </select>
+                </div>
+                <div className="col_input">
                         <span className="input_text">
                             서브타이틀
                         </span>

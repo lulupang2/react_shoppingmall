@@ -83,7 +83,7 @@ const Join = () => {
         });
         let result = await response.json();
         console.log(result);        
-    }
+    }   
 
         return (
             <div className="page-content">

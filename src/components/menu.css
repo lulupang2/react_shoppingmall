@@ -42,8 +42,15 @@
 /*드롭다운 */
 
 .dropdown_container{
+<<<<<<< HEAD
   width: 100%;
   transition: .5s ease-out;
+=======
+  width: 200%;
+  transition: .5s ease-out;
+  overflow-wrap: break-word;
+  white-space: nowrap;
+>>>>>>> main
 
   
 }
@@ -53,10 +60,17 @@
   padding: 0;
   margin: 0;
   background: #333;
+<<<<<<< HEAD
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
   color: #3faffa;
   font-size: .9rem;
+=======
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  color: #3faffa;
+  font-size: .8vw;
+>>>>>>> main
 }
 .dropdown_item{
     width: 100%;
